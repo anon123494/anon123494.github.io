@@ -28,7 +28,7 @@ twitter_username: bannediran
 github_username:  anon123494
 
 # Build settings
-theme: featherweight
+theme: minima
 plugins:
   - jekyll-feed
 
