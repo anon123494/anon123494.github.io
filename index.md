@@ -2,7 +2,7 @@
 layout: default
 title: Featherweight
 ---
-# Hi, I'm {{ site.author }}!
+# Hi, I'm f ds {{ site.author }}!
 
 An ultra-lightweight Jekyll theme, aiming to minimise bandwidth usage and deliver a bare-bones experience.
 
