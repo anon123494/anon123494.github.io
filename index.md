@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Featherweight
 ---
 # Hi, I'm f ds {{ site.author }}!
 
