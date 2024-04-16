@@ -29,8 +29,16 @@ twitter_username: bannediran
 github_username:  anon123494
 show_downloads: false
 
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 # Build settings
 remote_theme: featherweight
+#theme: featherweight
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
