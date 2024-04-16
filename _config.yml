@@ -28,7 +28,7 @@ twitter_username: bannediran
 github_username:  anon123494
 
 # Build settings
-theme: featherweight
+remote_theme: pages-themes/midnight@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
