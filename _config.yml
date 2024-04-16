@@ -26,9 +26,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bannediran  
 github_username:  anon123494
+show_downloads: false
 
 # Build settings
-remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: Cutwell/featherweight
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
