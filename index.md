@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Hi, I'm {site.author}}!
+# Hi, I'm {{site.author}}!
 
 An ultra-lightweight Jekyll theme, aiming to minimise bandwidth usage and deliver a bare-bones experience.
 
