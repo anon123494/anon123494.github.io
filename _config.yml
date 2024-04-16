@@ -29,7 +29,7 @@ github_username:  anon123494
 show_downloads: false
 
 # Build settings
-remote_theme: Cutwell/featherweight
+remote_theme: featherweight
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
