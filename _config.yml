@@ -29,6 +29,7 @@ twitter_username: bannediran
 github_username:  anon123494
 show_downloads: false
 
+markdown: kramdown
 
 defaults:
   - scope:
