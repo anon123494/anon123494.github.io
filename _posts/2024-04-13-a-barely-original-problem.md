@@ -3,8 +3,7 @@ layout: post
 title: A Barely Original Problem
 date: '2024-04-13T12:53:00.000-07:00'
 author: Banned In Iran
-tags:
-
+katex: true
 ---
 
 
@@ -26,7 +25,7 @@ upon opening any file $i$ it goes to the top of the recent list and any video be
 
 what are the number of distinct orderings the recent list can take by using an arbitrary (but obviously finite) number of steps (going to the previous or next file is one step)? [^1]
 
-### example
+### Example
 let $n = 3$. at step one we can only go from video $1$ (which is initially opened) to video $2$  which would transform the recent list to $(2,1,3)$
 if we then go to video $3$ we get the list $(3,2,1)$ and further returning $2$ (you can't get from $3$ to $1$) would give us the list $(2,3,1)$.
 
@@ -37,4 +36,4 @@ all of the three orderings above in addition to the initial $(1,2,3)$ ordering w
 
 
 
-[^1]: there are other possible formalizations but this suffices (and we will use more general forms laters)
+[^1]: there are other possible formalizations but this one suffices (and we will use more general forms laters)
