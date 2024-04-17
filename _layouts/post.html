@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% if site.compression.css %}
+<style>{% include post.css %}</style>
+{% endif %}
+
+{% if site.compression.home-link %}
+<a style="position:absolute;top:0;left:0;margin:1em;color:inherit;font-size:1em;" href="{{ site.url }}">{% if site.home-link-text %}{{ site.home-link-text }}{% else %}Return Home{% endif %}</a>
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+<i>Written on {{ page.date | date: "%B %e, %Y" }}</i>
+<br><i class="d">{% include reading-time.html %}</i>
+
+{{ content }}
+
+{% if site.compression.footer or site.compression.load-time or site.compression-page-size %}
+<br><hr>
+{% endif %}
+{% if site.compression.footer %}
+{% capture contact %}{% include contact.md %}{% endcapture %}
+{{ contact | markdownify }}
+{% endif %}
