@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% endif %}
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% if page.title %}
+<title>{{ page.title }}</title>
+{% else if site.name %}
+<title>{{ site.name }}</title>
+{% endif %}
+
+<!-- generate for your own icon using https://realfavicongenerator.net/ -->
+{% if site.compression.favicon %}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple-touch-icon | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.icon-32x32 | prepend: site.url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.icon-64x64 | prepend: site.url }}">
+<link rel="manifest" href="{{ site.manifest | prepend: site.url }}">
+<link rel="mask-icon" href="{{ site.mask-icon.href | prepend: site.url }}" color="{{ site.mask-icon.color }}">
+<meta name="msapplication-TileColor" content="{{ site.msapplication-TileColor }}">
+<meta name="theme-color" content="{{ site.theme-color }}">
+{% else %}
+<link rel="icon" href="data:,">
+{% endif %}
+
+<!-- include seo if enabled -->
+{% if site.compression.seo %}
+{% include seo.html %}
+{% endif %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+</head>
