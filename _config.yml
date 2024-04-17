@@ -44,8 +44,21 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-kramdown:
-  math_engine : katex
+
+
+compression:
+  # True to enable, False to disable
+  css: True # minimal inline CSS styling, based on https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41.
+  footer: True  # add personal links as footer to blog posts
+  home-link: True  # add a home link to top left corner of blog posts, navigates to website root.
+  load-time: False # show-off your page size + load speed top of the page (uses JS).
+  reading-time: True # add reading time estimate to your blog posts.
+  seo: True # apply SEO (add metadata, etc., support for Twitter and Facebook linking)
+  social-urls: True # include URL list on the homepage.
+  resume: False # include resume section on the homepage.
+  blogs: False # include blog posts listed in /_posts on the homepage.
+  page-size: False # report page size (count of bytes in page source - approximate as bytes used in report not included)
+  favicon: False # include favicon info in page header
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
