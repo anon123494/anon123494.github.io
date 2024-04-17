@@ -9,9 +9,10 @@ layout: compress
 <style>{% include main.css %}</style>
 {% endif %}
 
-{{ content }}
 <h1 style="font-size: 2.25em;color: cyan;"><b>{{ site.title}}</b></h1>
 <hr>
+
+{{ content }}
 
 <!-- add linebreak for homepage styling, but not for posts -->
 {% if page.layout != 'post'  %}
