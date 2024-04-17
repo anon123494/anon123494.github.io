@@ -15,10 +15,10 @@ katex: true
 <figcaption>this is my caption</figcaption>
 </figure>
 
-looking at this one day i got curious about how many possible permutations (or orderings) these files could get if you could only use the next or previous video function
+looking at this one day I got curious about how many possible permutations (or orderings) these files could get if you could only use the next or previous video function
 
 ## Formalizing the problem
-imagine you have a folder with  $n$ video files numbered from $1$ to $n$
+imagine you have a folder with  $n$ video files numbered from \(1\) to $n$
 and a video player with the file number $1$.along with the folder we have a list of recently opened file ordered initially from $1$ to $n$ (here we consider all the files not just the 10 or so most recent) if the current opened file is numbered $i$ then you can open the next video: $i+1$ (if you aren't at video $n$) or you can open the previous video: $i-1$ (if you aren't at video $1$).
 
 upon opening any file $i$ it goes to the top of the recent list and any video between it and the top gets shifted down. 
