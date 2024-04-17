@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
+
+# __{{site.title}}__
+
 # Hi, I'm {{site.author}}!
 
-An ultra-lightweight Jekyll theme, aiming to minimise bandwidth usage and deliver a bare-bones experience.
+This is my repository of unwanted words
+some translation some math and other random stuff!
 
 {% capture contact %}{% include contact.md %}{% endcapture %}
 {{ contact | markdownify }}
