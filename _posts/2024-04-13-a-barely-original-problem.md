@@ -10,15 +10,14 @@ katex: true
 <p style="text-align: left;">Being able to write is good. I want to get better at it and quite obviously the best way to get better is to write! However my desire to get better at writing is strongly overshadowed by my reluctance to write useless things, the internet is already so full of meaningless crap (at best and harmful crap at worst), and I'd hate to be one adding to it.</p><p style="text-align: left;">The only avenues where I'm capable of writing non-trivial stuff in are math and computer science, but triviality is a matter of perspective and anything I'd be writing about would already be written about considerably better than me by people who consider it trivial. The only way past seems to be to write about the one problem that I managed to come up with and this post is about that problem , it's solution and further generalizations of it</p><h2 style="text-align: left;">Next / Previous Video</h2><p style="text-align: left;">You're probably familiar with the next/previous function of a video players which opens the appropriate video file (most of the time alphabetically) coming after/before the current video. you may also be familiar with the <b>Recent </b>section that is shown when you right click on the video player in the taskbar listing around the 10 most recent files that have been opened by the video player
 </p> 
 
-\<figure>\
+
 ![example of some recent files](/assets/img/Recent.jpg)
-<figcaption>this is my caption</figcaption>
-</figure>
+
 
 looking at this one day I got curious about how many possible permutations (or orderings) these files could get if you could only use the next or previous video function
 
 ## Formalizing the problem
-imagine you have a folder with  $n$ video files numbered from \(1\) to $n$
+imagine you have a folder with  $n$ video files numbered from $1$ to $n$
 and a video player with the file number $1$.along with the folder we have a list of recently opened file ordered initially from $1$ to $n$ (here we consider all the files not just the 10 or so most recent) if the current opened file is numbered $i$ then you can open the next video: $i+1$ (if you aren't at video $n$) or you can open the previous video: $i-1$ (if you aren't at video $1$).
 
 upon opening any file $i$ it goes to the top of the recent list and any video between it and the top gets shifted down. 
