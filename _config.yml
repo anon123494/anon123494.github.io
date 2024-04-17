@@ -47,7 +47,7 @@ plugins:
 
 
 compression:
-  css: True # minimal inline CSS styling, based on https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41.
+  css: False # minimal inline CSS styling, based on https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41.
   footer: True  # add personal links as footer to blog posts
   home-link: True  # add a home link to top left corner of blog posts, navigates to website root.
   load-time: False # show-off your page size + load speed top of the page (uses JS).
