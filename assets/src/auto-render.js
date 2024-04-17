@@ -295,7 +295,7 @@ const renderMathInElement = function (elem, options) {
     right: "\\)",
     display: false
   },
-  ,{
+  {
     left: "$",
     right: "$",
     display: false
