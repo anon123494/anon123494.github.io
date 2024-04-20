@@ -32,8 +32,20 @@ if we then go to video <span class="katex"><math><semantics><mrow><mn>3</mn></mr
 all of the three orderings above in addition to the initial <span class="katex"><math><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> ordering which is possible in <span class="katex"><math><semantics><mrow><mn>0</mn></mrow></semantics></math></span> steps! are distinct possible orderings and it just so happens that they are the only possible orderings (will be proven later). so the answer to the problem with <span class="katex"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></semantics></math></span> is <span class="katex"><math><semantics><mrow><mn>4</mn></mrow></semantics></math></span>
 
 
+### A final note
+we can assume that the first steps are going from $1$ to $n$  (with some next steps) and then back to $1$ (with some previous steps) this leaves us with the same starting list and at video 1 but it also means that we will open each file at least once (this will help us avoid some edge cases in the proof). so from this point every video will have been visited at least once
 
+## Solution
+the "trick" here is to think backwards and think about what possible videos can be at the end of the list when we finish. The simplest restriction is that the last time (name step $t$) we  visit that video (which we name $i$ for now) it will be at the top of the list which means we have to open every single other video at least once without ever opening video $i$ again (since we assumed step $t$ was the last time $i$ was opened) . however this is impoosible if we have 
+$1 < i < n$. since if we choose next at step ($t + 1$) we won't be able to open video $i+1$ without first opening vidoe $i$ at least once (since we can only "move"  one video at a time) ; and if we choose previous then we can't ever open video $i -1$. this means that the only possible last videos in our list are videos $1$ and $n$.
 
+applying the same reasoning as above gives us that we can also two possible videos as our __second__ last video (either $1$ and $n - 1$ if we chose $n$ as out last or $2$ and $n$ if we chose $1$ as our last).continuing we have have two possible choices for every 'next' last video until we're left with only one possible video for the most recently watched. since it takes exactly $n-1$ steps ($n \geq 2$) to determine every video of the list (we choose from two at every step until there's only one vieo remaining) and we have exactly 2 choices as each step the number of possible orderings[2^] is $2^{n -1}$ by the rule of product 
+
+## Coming soon ...
+in the unpcoming post(s) i will present and solve some more generalized forms of this problem (what if we had 2 video players open etc...).
+
+Disclaimer: the __Coming soon__ part will only be true if i don't slack off which isn't certain considering how lazy i am
 
 
 [^1]: there are other possible formalizations but this one suffices (and we will use more general forms laters)
+[2^]: We should also prove that each different list of choices results in a different ordering (so that the 'mapping' we have made between permutations and lists of choices is one to one). but that is trivial (consider the first step which to lists of choices differ)

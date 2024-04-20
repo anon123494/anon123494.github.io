@@ -38,13 +38,13 @@ defaults:
       image: true
 
 # Build settings
-remote_theme: featherweight
+remote-theme: featherweight
 #theme: featherweight
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-
+lang: en
 
 compression:
   css: True # minimal inline CSS styling, based on https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41.
@@ -55,7 +55,7 @@ compression:
   seo: True # apply SEO (add metadata, etc., support for Twitter and Facebook linking)
   social-urls: True # include URL list on the homepage.
   resume: False # include resume section on the homepage.
-  blogs: False # include blog posts listed in /_posts on the homepage.
+  blogs: True # include blog posts listed in /_posts on the homepage.
   page-size: False # report page size (count of bytes in page source - approximate as bytes used in report not included)
   favicon: False # include favicon info in page header
 # Exclude from processing.
