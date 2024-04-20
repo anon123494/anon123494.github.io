@@ -47,4 +47,4 @@ Disclaimer: the __Coming soon__ part will only be true if i don't slack off whic
 
 
 [^1]: there are other possible formalizations but this one suffices (and we will use more general forms laters)
-[2^]: We should also prove that each different list of choices results in a different ordering (so that the 'mapping' we have made between permutations and lists of choices is one to one). but that is trivial (consider the first step which to lists of choices differ)
+[^2]: We should also prove that each different list of choices results in a different ordering (so that the 'mapping' we have made between permutations and lists of choices is one to one). but that is trivial (consider the first step which to lists of choices differ)
