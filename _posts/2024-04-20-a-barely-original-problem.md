@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Barely Original Problem
-date: '2024-04-13T12:53:00.000-07:00'
+date: '2024-04-21T12:53:00.000-07:00'
 author: Banned In Iran
 katex: true
 ---
